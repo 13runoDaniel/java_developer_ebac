@@ -26,16 +26,26 @@ public class VariaveisBasicas {
     private byte bi;
     // numeros em notacao de ponto flutuante
 
+    public VariaveisBasicas() {}
+
+    public VariaveisBasicas(int val) {
+        this.codigo = val;
+    }
+
 
     public String retornarTexto() {
         return "Retornar texto";
     }
 
     public int retornarInteiro() {
-        return 10;
+        int val = 10; // variavel escopo de metodo
+        String texto = "Declarando texto da variavel";
+        this.texto = null;
+        return val;
     }
 
     public long retornarLong(long num) {
+        this.texto = "Texto do escopo global";
         return num;
     }
 }
