@@ -33,14 +33,27 @@ public class Cliente {
     }
 
     public void imprimirEndereco() {
-        System.out.println("Imprimindo endereço: " + this.endereco);
+
+        System.out.println("Imprimindo endereço, " + this.endereco);
     }
 
     public String retornarNomeCliente() {
+
         return "Endereço do Bruno";
     }
 
+    /**
+     *
+     * Metodo que faz o calculo do valor total.
+     *
+     * @deprecated
+     * @see int getValorTotal(int count)
+     */
     public int getValorTotal() {
         return 10;
+    }
+
+    public int getValorTotal(int count) {
+        return 8;
     }
 }
